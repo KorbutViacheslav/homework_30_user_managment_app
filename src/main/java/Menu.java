@@ -63,13 +63,13 @@ public class Menu {
     }
 
     private Person getPersonDate() {
-        Scanner scanner1 = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Enter name");
-        String name = scanner1.nextLine();
+        String name = scanner.nextLine();
         System.out.println("Enter last name");
-        String lastName = scanner1.next();
+        String lastName = scanner.next();
         System.out.println("Enter age");
-        int age = scanner1.nextInt();
+        int age = scanner.nextInt();
         return new Person(name, lastName, age);
     }
 
